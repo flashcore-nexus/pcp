@@ -55,19 +55,19 @@ Anexos mantêm os formatos e limite configurado do PCP (padrão: 30 MB/arquivo).
 
 O build identifica a versão exata em **Sobre**. Para publicar versão futura, altere a versão no comando de build e no workflow, valide e publique um único pacote completo. Migrações futuras de esquema precisam de compatibilidade e backup próprios; não são autorizadas implicitamente por uma atualização de interface.
 
-## GitHub e GitHub Pages — aguardando autorização
+## GitHub e GitHub Pages — publicado
 
-Não havia repositório PCP específico entre os repositórios acessíveis durante a inspeção. O repositório local é preparado com uma lista explícita de arquivos públicos. **Não foi criado repositório remoto, não houve push nem publicação.** Bancos, backups, anexos, capturas e evidências privadas ficam fora do versionamento.
+Publicado em 25/11/2026 após autorização explícita do responsável. Aplicativo: **https://flashcore-nexus.github.io/pcp/**. Código público: **https://github.com/flashcore-nexus/pcp**. Versão **1.0.0**, build **4e7569df432d6a8470eb**. Os 41 arquivos publicados foram conferidos por hash contra o build local, e a abertura no navegador público foi validada sem erros no console. Bancos, backups, anexos, capturas e evidências privadas ficaram fora do versionamento e da publicação.
 
-Após aprovação explícita:
+Para publicações futuras, após aprovação explícita da versão:
 
-1. Criar ou vincular o repositório PCP, verificando novamente que não existe um equivalente.
+1. Usar o repositório existente `flashcore-nexus/pcp`; não criar um duplicado.
 2. Revisar os arquivos versionados e autorizar a visibilidade. GitHub Pages no plano gratuito pessoal exige repositório público; não mudar um repositório privado para público sem autorização. O Controle de Frotas atual usa Cloudflare Pages com repositório privado, embora a PWA e o mecanismo de atualização tenham sido reaproveitados para este build de GitHub Pages.
 3. Enviar somente os arquivos revisados. Nas configurações Pages, selecionar **GitHub Actions** como origem.
 4. Executar manualmente o workflow **Publicar interface PCP (manual)**. Não há deploy por push automático.
 5. Conferir manifesto, instalação, recarga offline, anexos, backup e atualização na URL final. Importar os dados por backup no dispositivo do usuário; nunca adicioná-los ao repositório.
 
-O workflow reproduz o build e publica apenas `PWA/dist`. Os caminhos, manifesto, caches e identificadores são relativos ao subdiretório. Não é necessário domínio pago ou serviço de banco online. A disponibilidade e os limites da hospedagem dependem do plano do GitHub.
+O workflow reproduz o build e publica apenas `PWA/dist`. Os caminhos, manifesto, caches e identificadores são relativos ao subdiretório. O build fixa LF nos textos gerados para produzir bytes idênticos no Windows e no Linux do GitHub Actions. Não é necessário domínio pago ou serviço de banco online. A disponibilidade e os limites da hospedagem dependem do plano do GitHub.
 
 ## Evidências de teste e limitações
 
