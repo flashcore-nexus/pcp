@@ -1,0 +1,2 @@
+# Preserva os bytes revisados: os hashes do runtime e do build independem do checkout.
+* -text

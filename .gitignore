@@ -1,0 +1,36 @@
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/abrir_pcp.py
+!/Abrir PCP.cmd
+!/servidor/
+!/interface/
+!/PWA/
+!/.github/
+/servidor/*
+!/servidor/*.py
+!/servidor/seed.json
+/interface/*
+!/interface/index.html
+!/interface/static/
+/PWA/*
+!/PWA/build.py
+!/PWA/download_runtime.py
+!/PWA/preview.py
+!/PWA/Abrir previa PCP.cmd
+!/PWA/RUNTIME-SHA256.json
+!/PWA/THIRD-PARTY.md
+!/PWA/src/
+!/PWA/vendor/
+!/PWA/licenses/
+!/PWA/tests/
+/PWA/tests/*
+!/PWA/tests/test_bridge.py
+!/PWA/tests/harness.html
+!/PWA/tests/harness.js
+__pycache__/
+*.py[cod]
+*.sqlite3*
+*.log
+.env*
